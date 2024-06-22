@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Fera Qairissa</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#Leadership">Leadership</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id= "hamburger-nav">
+        <div class="logo">Fera Qairissa</div>
+        <div class= "hamburger-menu">
+
+            <div class= "hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>   
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+                <li><a href="#Leadership" onclick="toggleMenu()">Leadership</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/assets/1.jpg" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title"> Fera </h1>
+            <p class="section__text__p2"> Aspiring Biomedical Researcher</p>
+           
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/fera-qairissa-9aa091280/">
+                    <img src="/assets/linkedin.png" alt="My linkedin profile" class= "icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>  
+        <p class="section__text__p1"> Check out my </p>
+        <h1 class="title">Featured Projects</h1>
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left" is-hidden>
+                <img src="/assets/left-arrow.png" alt="">
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <a href="BII.html">
+                            <img class="carousel__image" src="/assets/carousel_1.png" alt="">
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a href="aboutcapstone.html">
+                            <img class="carousel__image" src="/assets/carousel_2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a href="astar.html">
+                            <img class="carousel__image" src="/assets/carousel_3.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button class="carousel__button carousel__button--right">
+                <img src="/assets/right-arrow.png" alt="">
+            </button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="about">
+        <p class="section__text__p1"> Get to Know More </p>
+        <h1 class="title"> About Me </h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/assets/3.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-details-container">
+                    <div class="container-grid-1">
+                        <h2></h2>
+                        <h2 class="text-container-center-p">My Best Skills</h2>
+                        <img src="/assets/experience.png" alt="experience icon" class="skills-img">
+                    </div>
+                    <div class="text-container-center-p">
+                        <p> Click to Find Out More</p>
+                    </div>
+                    <div class="about-containers">
+                        <button class="details-container"> 
+                            <h3>Biotechnology</h3>
+                            <a href="Biotechnology.html">
+                            <br>
+                            <img src="/assets/dots percentage.png" alt="" class="image-small-1">
+                            </a>
+                        </button>
+                    <div class="details-container"> 
+                        <a href="Coding.html">
+                        <h3>Coding</h3>
+                        <img src="/assets/dots percentage 2.png" alt="" class="image-small">
+                        </a>
+                    </div>
+                </div>
+                    <p>Ever since a young age, I have always been fascinated by the life sciences and biological processes happening around me, often wondering how medicines function or how I can help contribute to the finding of cures for diseases and viruses like COVID-19 or SARS. Thus, this further drives my motivation and aspiration in contributing to the biomedical field. <br /> <br />If given an opportunity to study Biomedical Science in NP, I am sure to continue my pursuit in Biotechnology and understand more on its application, theory and critical concept in order to excel and progress onto Biomedical Research one day.</p>
+            </div>
+            <br>
+        </div> 
+        <br>
+        
+    </section>
+    <h1 class="text-container-center-p1"> More About Me </h1>
+    <p class="section__text__p1"> Quick links</p>
+    <br>
+    <br>
+    <div class="btn-container">
+        <button class="btn-1 btn-color-2">
+            <a href="#achievements"> Achievements </a>
+        </button>
+        <button class="btn-1 btn-color-2">
+            <a href="#Leadership"> Leadership </a>
+        </button>
+        <button class="btn-1 btn-color-2">
+            <a href="#projects"> Projects </a>
+        </button>
+    </div>
+    <br>
+    <br>
+
+    <section id="achievements">
+        <div class="header-container-2">
+            <br>
+            <p class="text-container-center-p4"> Explore My</p>
+            <h1 class="title"> Awards & Achievements </h1>
+            <p class="text-container-center-p2">
+                During my four years at SST, I continuously expanded my knowledge and honed my skills, which was recognized through numerous awards and achievements. Notably, I received 4 prestigious scholarships: 2 MOE Scholarships, 1 A*STAR Scholarship, and an annual ESIS Scholarship.
+            </p>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Academics</h2>
+                    <img src="/assets/checkmark.png" alt="experience icon" class="icon"/>
+                    <div class="article-container">
+                        <article>
+                            <br>
+                            <button class="unstyled-button">
+                                <a href="astar.html"> 
+                                    <img src="/assets/astar scholarship.png" alt="" height="250px" width="420px" class="image-cecent2er">
+                                </a>
+                            </button>
+                        </article>
+                       <article>
+                            <img src="/assets/achievements acad.png" alt="" height="300px" width="410px" class="image-center3">
+                        </article>
+                        
+                    </div>
+                </div>
+            <div class="details-container">
+                    <h2 class="experience-sub-title">Competitions</h2>
+                    <div class="article-container">
+                        <article>
+                            <br>
+                            <button class="btn-2 btn-color-2">
+                                <a href="academic-achivement.html"> Academic Competition </a>
+                            </button>
+                            <br>
+                            <button class="btn-2 btn-color-2">
+                                <a href="sciencecomp.html"> Science Competitions </a>
+                            </button>
+                            <br>
+                            <button class="btn-2 btn-color-2">
+                                <a href="otherscomp.html"> Others </a>
+                            </button>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="/assets/arrow.png" alt="arrow icon"  class="arrow.nav" onclick="location.href='#about'" height="35px" width="35px" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="Leadership" class="Leadership">
+        <div class="header-container-3">
+            <br>
+            <h1 class="title">Leadership</h1>
+            <p class="text-container-center-p3">
+            Leadership has been an integral part of my life as I have had the many opportunities to take charge in group settings, honing my confidence and communication skills. Below are the highlighted leadership opportunities I was offered throughout my SST journey.  
+         </p>
+          <br>
+          <br>
+        </div>
+        <div class="middle-line"></div>
+
+        <div class="box box-top">
+            <div class="date">
+                <p>2023</p>
+            </div>
+            <div class="box-content">
+                <a class="leaderlinks" href="otherscomp.html">Show Choir and Dance Vice-chairperson</a>
+            </div>
+        </div>
+
+        <div class="box box-bottom">
+            <div class="date">
+                <p>2022</p>
+            </div>
+            <div class="box-content">
+                <p>Show Choir and Dance Lower Sec CCA Committee Member</p>
+            </div>
+        </div>
+        <div class="box box-top">
+            <div class="date">
+                <p>2022</p>
+            </div>
+            <div class="box-content">
+                <a class="leaderlinks" href="ramadan.html">Chairperson of student-led project</a>
+            </div>
+        </div>
+
+        <div class="box box-bottom">
+            <div class="date">
+                <p>2022</p>
+            </div>
+            <div class="box-content">
+                <p>Rakan Bahasa Ambasador (Malay Language Champion)</p>
+            </div>
+        </div>
+        <div class="box box-top">
+            <div class="date">
+                <p>2021</p>
+            </div>
+            <div class="box-content">
+                <p>Leader-In-Training Ambassador</p>
+            </div>
+        </div>
+
+        <br>
+    </section>
+    <img src="/assets/arrow.png" alt="arrow icon"  class="arrow.nav" onclick="location.href='#about'" height="35px" width="35px" />
+    <br>
+    <br>
+    <br>
+
+    <section id="projects">
+        <div class="header-container-2">
+            <br>
+            <br>
+                <p class="text-container-center-p4">Browse My Recent</p>
+                <h1 class="title">Projects</h1>
+            <br>
+            <br>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/assets/grp photo.JPG" alt="project-1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">2024 Capstone Project </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn">
+                            <a href="aboutcapstone.html">About</a>
+                            </button>
+                        <button class="btn btn-color-2 project-btn" onclick=location.href="">
+    
+                            Work Showcase 
+                        </button>                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/assets/gmaclogo.png" alt="project-2" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">GMAC Student's Challenge</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                        <a href="aboutgmac.html">About</a>  
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                        Work Showcase 
+                    </button>                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/assets/symposium.jpg" alt="project-3" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Science Communications</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                        <a href="sciencecom.html">About</a> 
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                        Work Showcase 
+                    </button>                </div>
+            
+        </div> 
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/IMG_7885.jpeg" alt="project-4" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">IDP BT Coursework</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="aboutBTcoursework.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="aboutBTcoursework.html#Work-Showcase">Work Showcase </a>
+                </button>                
+            </div>
+            
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/chempt.jpg" alt="project-5" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Chemistry iPT</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="Chem iPT.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/bii grp photo.jpeg" alt="project-6" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">BII Internship</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="BII.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        </div>
+        <div class="header-container-4">
+            <h1 class="title"> <br> Volunteering Works <br> <br></h1>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/g4m.png" alt="volunteering-project-1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Games for Migrants</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="gamesformigrant.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/labbzoom.png" alt="volunteering-project-2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Learning Beyong Alliance</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="labb.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/park.png" alt="volunteering-project-2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Park Cleanup</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="park.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/ramadan.jpeg" alt="volunteering-project-2" class="project-img2"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Ramadan on Wheels</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="ramadan.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <h2 class="header-container-4"> <br> Overseas Learning Experience <br> <br></h2>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="/assets/grpphoto.JPG" alt="volunteering-project-2" class="project-img2"/>
+            </div>
+            <h2 class="experience-sub-title project-title">BBS x SST (Jakarta)</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    <a href="jakarta.html">About</a> 
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick=location.href="">
+
+                    Work Showcase 
+                </button>                
+            </div>
+            
+    </section>
+    <img src="/assets/arrow.png" alt="arrow icon"  class="arrow.nav" onclick="location.href='#about'" height="35px" width="35px" />
+  
+</body>
+</html>
+
+<script src="carousel.js"></script>
+<script src="zoom-out.js"></script>
